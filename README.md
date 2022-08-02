@@ -1,2 +1,2 @@
 ## OBRadioPlayer
-Simple Radio Payer built using Qt originally for Openbox
+Simple Radio Payer built using Python and Qt originally for Openbox
