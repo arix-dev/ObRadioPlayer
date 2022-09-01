@@ -120,7 +120,11 @@ class MainWindow(QWidget):
 
     def editEntry(self):
         selectedUrl = self.nameToUrl(listWidget.currentItem().text())
-        print(selectedUrl)
+        directory_path = os.getcwd()
+        tree = ET.ElementTree(file=directory_path + '/stations.xml')
+        root = tree.getroot()
+        urls = root.findall('.//Url') 
+
 
 
     def nameToUrl(self, selectedName):
